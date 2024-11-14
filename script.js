@@ -19,7 +19,6 @@ document.getElementById('message-form').addEventListener('submit', function(even
     event.preventDefault();
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-
-    window.open(`mailto:msuryamsurya2003@gmail.com?subject=Message from ${name}&body=${message}`);
+    window.open(`mailto:shanmugapriya8004@gmail.com?subject=Message from ${name}&body=${message}`);
     alert('Your message has been sent!');
 });
