@@ -1,4 +1,3 @@
-// Intersection Observer for one-time animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -7,10 +6,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.2 });
-
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-// Smooth scrolling
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -19,8 +15,6 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
-
-// Email form submission
 document.getElementById('message-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
